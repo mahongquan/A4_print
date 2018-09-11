@@ -18,9 +18,10 @@ class Card1 extends React.Component{
     <div style={{
             padding:"100px 100px 100px 100px"
           }}>
-	    <p style={{marginTop:"40px",marginLeft:"100px",fontSize:"20px"}}>
+	    <p style={{marginTop:"40px",textAlign:"center",fontSize:"20px"}}>
 	            <font face="SimHei">北京科技大学预收款凭条&emsp;&emsp;&emsp;No&emsp;{this.props.start}</font>
       </p>
+      <p style={{textAlign:"center",fontSize:"15px"}}>（不作报销凭证）</p>
       <div style={{height:"1em"}}></div>
 			<p>
           <span>今收到</span>
@@ -163,7 +164,7 @@ class A4Lian extends React.Component{
         start+=1;
     }
 	return (
-<div>
+<div style={{position:"relative"}}>
   <div className="only_screen">
     <div style={{display:"flex", justifyContent:"space-between"}}>
      <div>
@@ -181,12 +182,20 @@ class A4Lian extends React.Component{
   </div>
   <style jsx="true">
 {`
+  .only_screen{
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1;
+    background-color:#aaa;
+  }
 .line_input{
  border:none;
  border-bottom:1px solid #000;
 }
 @page { margin: 0 }
-body { margin: 0 }
+body { margin: 0px 0px 0px 0px;}
 .sheet {
   margin: 0;
   overflow: hidden;

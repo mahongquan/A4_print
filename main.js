@@ -66,10 +66,10 @@ const createWindow = () => {
   //menu
   const template=
     [{
-      label: 'File',
+      label: '文件',
       submenu: [
         {
-          label: 'Print',
+          label: '打印',
           accelerator: 'Ctrl+P',
           click: (item, win) =>{
             console.log(win);
@@ -78,31 +78,31 @@ const createWindow = () => {
           },
         },
         {
-          label: 'New Window',
+          label: '新窗口',
           accelerator: 'Ctrl+N',
           click: () =>{createWindow()},
         },
         {
-          label: 'HOME',
-          accelerator: 'Ctrl+H',
+          label: '重启',
+          accelerator: 'Ctrl+R',
           click: (item, win) =>{win.loadURL(indexUrl);},
         },
         {
-          label: 'BACK',
+          label: '后退',
           accelerator: 'Ctrl+B',
           click: (item, win) =>{
             win.webContents.send("goback");
           },
         },
          {
-          label: 'DevTools',
+          label: '开发工具',
           accelerator: 'Ctrl+D',
           click: (item, win) =>{
             win.openDevTools();
           },
         },
         {
-          label: 'Exit',
+          label: '退出',
           accelerator: 'Ctrl+E',
           click: (item, win) =>{
              // console.log(win);
