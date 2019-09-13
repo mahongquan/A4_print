@@ -57,6 +57,9 @@ const createWindow = () => {
   // Create the browser window.
 
   mainWindow = new BrowserWindow({
+    webPreferences: {
+        nodeIntegration: true
+    },
 
     width: 800,
 

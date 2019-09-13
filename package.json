@@ -5,9 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "electron . --local --dev",
-    "server": "react-scripts start",
-    "build": "react-scripts build"
+    "dev": "electron . --local --dev"
   },
   "keywords": [
     "Electron",
@@ -18,10 +16,13 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "~1.8.4"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "react-scripts": "^1.1.4"
+    "@babel/polyfill": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "electron": "^6.0.9",
+    "electron-builder": "^21.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
