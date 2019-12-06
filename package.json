@@ -9,7 +9,7 @@
     "url": "https://your-website.com"
   },
   "build": {
-    "asar": "false",
+    "asar":"false",
     "appId": "com.my-website.my-app",
     "productName": "A4_Print",
     "copyright": "Copyright © 2019 ${author}",
@@ -22,19 +22,19 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.7.4",
+        "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-decorators": "^7.7.4",
     "@babel/plugin-proposal-do-expressions": "^7.7.4",
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
-    "@babel/plugin-proposal-logical-assignment-operators": "^7.7.4",
+    "@babel/plugin-proposal-logical-assignment-operators":"^7.7.4",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
     "@babel/plugin-proposal-optional-chaining": "^7.7.4",
     "@babel/plugin-proposal-pipeline-operator": "^7.7.4",
-    "@babel/plugin-syntax-jsx": "^7.7.4",
+    "@babel/plugin-syntax-jsx":"^7.7.4",
     "@babel/plugin-transform-flow-strip-types": "^7.7.4",
-    "@babel/plugin-transform-react-display-name": "^7.7.4",
+    "@babel/plugin-transform-react-display-name":"^7.7.4",
     "@babel/plugin-transform-react-jsx": "^7.7.4",
     "@babel/plugin-transform-react-jsx-self": "^7.7.4",
     "@babel/plugin-transform-react-jsx-source": "^7.7.4",
@@ -43,16 +43,15 @@
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "@babel/preset-typescript": "^7.7.4",
-    "@babel/register": "^7.7.4",
+    "@babel/register": "^7.7.4", 
     "electron-is-dev": "^1.0.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "sprintf": "^0.1.5"
+    "react-dom": "^16.12.0"
   },
   "homepage": "./",
   "main": "public/electron.js",
   "scripts": {
-    "local": "node_modules/.bin/electron . --local",
+    "local":"node_modules/.bin/electron . --local",
     "start": "rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
@@ -72,13 +71,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "react-scripts": "2.1.5",
     "@rescripts/cli": "^0.0.10",
     "@rescripts/rescript-env": "^0.0.5",
     "concurrently": "^4.1.0",
     "electron": "^7.1.2",
     "electron-builder": "^20.38.5",
-    "react-scripts": "2.1.5",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.7.3",
     "wait-on": "^3.2.0"
   }
 }
