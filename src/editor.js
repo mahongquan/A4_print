@@ -19,7 +19,7 @@ class Card1 extends React.Component{
             padding:"100px 100px 100px 100px"
           }}>
 	    <p style={{marginTop:"40px",textAlign:"center",fontSize:"20px"}}>
-	            <font face="SimHei">北京科技大学预收款凭条&emsp;&emsp;&emsp;No&emsp;{this.props.start}</font>
+	            <font face="SimHei">北京科技大学预收款凭条&emsp;&emsp;&emsp;No.&emsp;{this.props.start}</font>
       </p>
       <p style={{textAlign:"center",fontSize:"15px"}}>（不作报销凭证）</p>
       <div style={{height:"1em"}}></div>
