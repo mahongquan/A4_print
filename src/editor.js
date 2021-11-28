@@ -1,5 +1,5 @@
 import React from 'react';
-import sprintf from 'sprintf';
+var sprintf = require('sprintf-js').sprintf
 let fs,path,ipcRenderer;
 if(window.require){
   fs=window.require("fs");
@@ -109,7 +109,7 @@ class A4Lian extends React.Component{
     }
   }
   componentWillUnmount=()=>{
-    this.saveconfig();
+    this.saveconfig(this.state);
   }
 
   saveconfig=(data)=>{
