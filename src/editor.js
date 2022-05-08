@@ -1,5 +1,6 @@
 import React from 'react';
-var sprintf = require('sprintf-js').sprintf
+// var sprintf = require('sprintf-js').sprintf
+import { sprintf } from "printj/printj.mjs";
 let fs,path,ipcRenderer;
 if(window.require){
   fs=window.require("fs");
